@@ -1,24 +1,11 @@
 # boda_s-l
 
-## Project setup
-```
-npm install
-```
+-Formulario de Asistencia con: Alergenos, Comentarios, Acompañantes, Nombres
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+-Uploader de Fotos hechas en la post fiesta
 
-### Compiles and minifies for production
-```
-npm run build
-```
+-Planificacion, ubicación y cuenta atrás 
 
-### Lints and fixes files
-```
-npm run lint
-```
+-Diseño: Blanco y tonos verdes, fuente decente por el amor de dios
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-Vue.js, Netlify
