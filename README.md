@@ -6,6 +6,8 @@
 
 -Planificacion, ubicación y cuenta atrás 
 
+-Apartado para canciones(en el formulario?)
+
 -Diseño: Blanco y tonos verdes, fuente decente por el amor de dios
 
  -moon dance,Gentium Plus
