@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //MUSICA
-
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     const music = document.getElementById('backgroundMusic');
