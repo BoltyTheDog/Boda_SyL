@@ -1,20 +1,35 @@
 
+
 /*INICIO*/
 #inicio{
     text-align: center;
+    color: #989175;
 
 }
-#ubicacion{
-    text-align: center;
-}
+/*HORARIO*/
 #horario{
     text-align: center;
 }
+
+/*MAPS*/
+#ubicacion{
+    text-align: center;
+}
+#map {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*FOTOS*/
 #fotos{
     text-align: center;
 }
 main{
-    background-color:#cffcd2;
+    background-color:#d4c2d3;
     justify-content: center;
 }
 img {
@@ -38,7 +53,7 @@ p{
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    background: #52c759;
+    background: #a586a6;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Gentium Plus";
@@ -115,12 +130,4 @@ input:focus, select:focus, textarea:focus {
     background-color: #cd9fcc; /* Cambio de color al pasar el mouse */
 }
 
-/* Leaflet Maps */
-#map {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+
