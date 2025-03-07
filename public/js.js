@@ -74,28 +74,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //MUSICA
-var audio = document.getElementById('audio');
-        var muteButton = document.getElementById('muteButton');
 
-        // Intentar reproducir automáticamente cuando la página carga
-        window.addEventListener('load', function() {
-            audio.play().catch(error => {
-                console.log("El navegador bloqueó la reproducción automática. Esperando interacción...");
-            });
-        });
+// Esperar a que el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    const music = document.getElementById('backgroundMusic');
+    const muteButton = document.getElementById('muteBtn');
+    
+    try {
+        // Intentar reproducir automáticamente
+        music.play();
+    } catch (error) {
+        console.log('La reproducción automática falló: ' + error);
+    }
 
-        // Si autoplay no funciona, hacer que se active después de un clic en cualquier parte de la página
-        document.addEventListener('click', function() {
-            audio.play();
-        }, { once: true }); // Se ejecuta solo una vez para evitar múltiples reproducciones
-
-        // Botón para mutear/desmutear
-        muteButton.addEventListener('click', function() {
-            if (audio.muted) {
-                audio.muted = false; // Desmutear
-                muteButton.textContent = "🔊 Silenciar";
-            } else {
-                audio.muted = true; // Mutear
-                muteButton.textContent = "🔇 Activar sonido";
-            }
-        });
+    // Controlador del botón de silencio
+    muteButton.addEventListener('click', function() {
+        music.muted = !music.muted;
+        muteButton.textContent = music.muted ? 'Desilenciar' : 'Silenciar';
+    });
+});
