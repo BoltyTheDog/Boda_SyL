@@ -19,6 +19,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.0/mapbox-gl.css" rel="stylesheet">
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+
+    
 </head>
 
 <body>
@@ -26,14 +37,16 @@
     <main>
         <section id="inicio">
             <h2>Bienvenidos a Nuestra Boda</h2>
-            <p>Con mucha emoción, queremos compartir con vosotros este día tan especial. Acompáñanos a celebrar nuestro amor el 15/07/2025 en Gijón. ¡No sería lo mismo sin vosotros!</p>
+            <p>Con mucha emoción, queremos compartir con vosotros este día tan especial. Acompáñanos a celebrar nuestro
+                amor el 15/07/2025 en Gijón. ¡No sería lo mismo sin vosotros!</p>
             <img src="img/pexels-asadphoto-169190.jpg" alt="Boda">
         </section>
-
+       
         <section id="ubicacion">
             <h2>Ubicación</h2>
-            <p>Aquí irá un mapa con la ubicación del evento.</p>
+            <div id="map"></div> <!-- mapa jeje -->
         </section>
+
 
         <section id="horario">
             <h2>Horario</h2>
@@ -88,8 +101,19 @@
         </section>
     </main>
 
-    <footer>
-        <p>Contacto: sergiogv6@gmail.com | Teléfono: ...</p>
+    <footer id="footer">
+        <h2>Contáctanos!</h2>
+        <div class="container">
+            <a href="https://wa.me/34650014297" class="whatsapp-button" target="_blank">
+               <i class="fab fa-whatsapp"></i> Whatsapp Novio
+            </a>
+        
+            <a href="https://wa.me/34658011261" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Whatsapp Novia
+            </a>
+        </div>
+        
+        
     </footer>
 </body>
 

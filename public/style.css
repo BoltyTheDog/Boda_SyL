@@ -87,3 +87,40 @@ input:focus, select:focus, textarea:focus {
 .button-submit:hover {
     background: whitesmoke;
 }
+
+/*FOOTER*/
+#footer{
+    text-align: center;
+    justify-content: center;
+}
+/*Botones*/
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #d3b0dc; /* Color marrón del botón */
+    color: rgb(50, 47, 47);
+    padding: 12px 20px;
+    border-radius: 30px; /* Bordes redondeados */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: serif;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #cd9fcc; /* Cambio de color al pasar el mouse */
+}
+
+/* Leaflet Maps */
+#map {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
